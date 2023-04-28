@@ -1,0 +1,121 @@
+* {
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  /* font-family: 'Roboto', sans-serif !important; */
+}
+html {
+  /* height: 100%;
+  width: 100%; */
+  /* font-size: 16px; */
+
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Poppins", "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #0c0c13;
+  /* max-width: 500px; */
+  /* width: 100vw; */
+ 
+
+}
+
+/*custom css*/
+
+:root {
+  --main-color: #07ffc9;
+  --main-color: #dd6bd5;
+  --error-color: #ff1100;
+  --secondary-color: #158cee;
+  --hash-color: #d6dfdf;
+}
+
+.Hangman img {
+  width: 200px;
+  height: 350px;
+}
+
+.Hangman h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  padding-top: 0;
+  color: var(--secondary-color);
+}
+
+.Hangman-word {
+  letter-spacing: 1em;
+  margin: 0.4em -1em 0.2em 0;
+  font-size: 1.5rem;
+  color: var(--main-color);
+}
+
+.Hangman-btns {
+  text-align: center;
+  color: var(--secondary-color);
+  display: inline-block;
+  font-size: 1.5rem;
+}
+.Hangman button {
+  border: 2px solid var(--main-color);
+  font-family: inherit;
+  font-size: 2.5rem;
+  cursor: pointer;
+  width: 5rem;
+  margin: 18px 8px 10px 13px;
+  letter-spacing: 0px;
+  outline: none;
+  background: black;
+  color: white;
+  border-radius: 10px;
+  padding-top: 15px;
+}
+
+.Hangman-reset {
+  color: var(--hash-color);
+  box-shadow: 0 6px var(--main-color) !important;
+  width: 10rem !important;
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+  box-shadow: 0 0 40px var(--main-color);
+}
+.Hangman-reset:hover{
+  background-color: #fffffa;
+color: black;
+  box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #bc13fe,
+              0 0 0.8rem #bc13fe,
+              0 0 2.8rem #bc13fe,
+              inset 0 0 1.3rem #bc13fe !important; 
+}
+.keyboard{
+  padding: 2rem 4rem;
+  width: 100%;
+  text-align: center;
+}
+.Hangman button:hover {
+  background-color: #fffffa;
+color: black;
+  box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #bc13fe,
+              0 0 0.8rem #bc13fe,
+              0 0 2.8rem #bc13fe,
+              inset 0 0 1.3rem #bc13fe; 
+}
+
+.Hangman button:disabled {
+  color: var(--hash-color);
+  background-color: var(--error-color);
+  border-color: var(--error-color);
+  box-shadow: 0 0 40px var(--error-color);
+}
+.loading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}

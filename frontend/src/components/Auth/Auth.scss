@@ -1,0 +1,129 @@
+// body{
+//     background: #000;
+//   }
+.auth{
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 2rem;
+    gap: 4rem;
+    // max-width: 600px;
+    
+    
+}
+
+.neon {
+    font-family: 'Monoton', cursive;
+    color: #FFD5FF;  
+     
+    font-weight: 400;
+    letter-spacing: 8px;
+    text-shadow: 1px 0px 4px #FFD5FF, 2px 0px 4px #FFD5FF, 3px 0px 4px #FFD5FF, 2px 0px 3px #D42CCA, 2px 3px 15px #D42CCA, 2px 0px 15px, 5px 0px 125px, 20px 0vw 200px #D42CCA, 40px 0vw 200px #D42CCA;
+}
+.neon.header{
+    font-size: 7rem;
+}
+.auth-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 4rem;
+    width: 100%;
+    justify-self: flex-start;
+    // align-self: flex-start;
+}
+.small{
+    font-size: 2rem;
+    width: 40%;
+    text-align: center;
+    font-style: italic;
+}
+.auth-form{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+    justify-self: center;
+}
+.form-data{
+    padding: 2rem;
+    font-style: italic;
+    background: #0c0c13;
+    border: 3px solid #FFD5FF;
+    color: #D42CCA;
+    width: 80%;
+    max-width: 500px;
+    height: 70px;
+    outline: none;
+   
+    border-radius: 7px;
+    font-size: 30px;
+    // padding: 10px;
+    margin: 0.5rem 1rem;
+    min-width: 200px;
+
+}
+.neon-btn{
+    border: 3px solid #FFD5FF;
+    background: #0c0c13;
+    border: 3px solid #FFD5FF;
+    color: #D42CCA;
+    width: 50%;
+    max-width: 500px;
+    height: 70px;
+    outline: none;
+   
+    border-radius: 30px;
+    font-size: 30px;
+    padding: 10px;
+    margin: 4rem 1rem;
+    min-width: 200px;
+}
+.neon-btn:hover{
+    scale: 1.1;
+    transition: 0.5s;
+    font-family: 'Monoton', cursive;
+    // width: 60%;
+    color: black;
+    background-color: honeydew;
+    cursor: pointer;
+
+
+}
+
+.flicker-slow {
+    animation: flicker 3s linear infinite;
+}
+
+.flicker-fast {
+    animation: flicker 1s linear infinite;
+}
+
+@keyframes flicker {
+
+    0%,
+    19.999%,
+    22%,
+    62.999%,
+    64%,
+    64.999%,
+    70%,
+    100% {
+        //text-shadow: none;
+        opacity: .99;
+
+    }
+
+    20%,
+    21.999%,
+    63%,
+    63.999%,
+    65%,
+    69.999% {
+        opacity: 0.4;
+    }
+}
