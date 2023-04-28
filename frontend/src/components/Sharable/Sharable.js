@@ -1,5 +1,5 @@
 import React, { Component, useEffect, useState } from "react";
-// import { randomWord } from "./words";
+import { randomWord } from "../Hangman/words";
 import * as AuthApi from "../../AuthRequests";
 
 import step0 from "../images/0.jpg";
@@ -16,7 +16,7 @@ let user = JSON.parse(localStorage.getItem('userh'))
 console.log(user)
 
 let word = window.location.href.split('/')[4]
-word = word.slice(0, word.length - 2)
+word = word?.slice(0, word.length - 2)
 console.log(word)
 
 // var ciphertext = AES.encrypt(JSON.stringify(word), 'my-secret-key@123').toString();
@@ -38,7 +38,7 @@ class Sharable extends Component {
     this.state = {
       mistake: 0,
       guessed: new Set(),
-      answer: word,
+      answer: word ? word : randomWord() ,
     };
     this.handleGuess = this.handleGuess.bind(this);
     this.keyPress = this.keyPress.bind(this);
@@ -105,7 +105,7 @@ class Sharable extends Component {
     this.setState({
       mistake: 0,
       guessed: new Set(),
-      answer: word,
+      answer: word ? word : randomWord(),
     });
   };
   updateScore = async () => {
