@@ -4,7 +4,7 @@ import {AES, enc} from "crypto-js"
 
 
 const SharePage = () => {
-    let baseShare = "https://hangman-app.up.railway.app/sharable/";
+    let baseShare = "https://644c537f587f9e295547a7ae--hangman-app-v1.netlify.app/sharable/";
     const [copy, setCopy] = useState(baseShare);
     const [copyinp, setcopyinp] = useState("");
     // var ciphertext = AES.encrypt(JSON.stringify(copyinp), 'my-secret-key@123').toString();
